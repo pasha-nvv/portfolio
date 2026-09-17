@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap");
+:root {
+  --black: #101010;
+  --white: #f1f0ed;
+  --muted: #989894;
+  --line: #292929;
+  --lime: #b8ff4e;
+  --lavender: #9e91ff;
+  --sans: "DM Sans", Arial, sans-serif;
+  --mono: "DM Mono", monospace;
+  background: var(--black);
+  color: var(--white);
+  font-family: var(--sans);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  min-width: 320px;
+  background:
+    radial-gradient(
+      circle at 85% 8%,
+      rgba(126, 99, 255, 0.14),
+      transparent 26%
+    ),
+    radial-gradient(
+      circle at 8% 55%,
+      rgba(184, 255, 78, 0.055),
+      transparent 24%
+    ),
+    var(--black);
+}
+#root {
+  width: 100%;
+  min-height: 100vh;
+}

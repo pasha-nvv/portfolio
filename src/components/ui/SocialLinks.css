@@ -1,0 +1,27 @@
+.social-links {
+  display: flex;
+  gap: 9px;
+  margin-top: 22px;
+}
+
+.social-links a {
+  width: 38px;
+  height: 38px;
+  display: grid;
+  place-items: center;
+  color: var(--muted);
+  border: 1px solid rgba(255, 255, 255, .17);
+  border-radius: 50%;
+  background: rgba(255, 255, 255, .045);
+  backdrop-filter: blur(12px);
+  transition: color .25s ease, background .25s ease, transform .25s ease, border-color .25s ease;
+}
+
+.social-links a:hover {
+  color: #151515;
+  background: var(--lime);
+  border-color: var(--lime);
+  transform: translateY(-3px);
+}
+
+.social-links svg { width: 16px; height: 16px; }
