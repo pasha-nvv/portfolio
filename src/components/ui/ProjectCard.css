@@ -1,5 +1,12 @@
 .project-card {
   background: #171717;
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+.project-card:focus-visible {
+  outline: 2px solid var(--lime);
+  outline-offset: 3px;
 }
 .project-card-preview {
   position: absolute;
@@ -13,6 +20,14 @@
   transition:
     transform 0.65s cubic-bezier(0.2, 0.8, 0.2, 1),
     opacity 0.4s ease;
+}
+.project-card-preview.preview-unavailable {
+  display: none;
+}
+.project-card:has(.preview-unavailable) {
+  background:
+    radial-gradient(ellipse at 75% 20%, rgba(133, 109, 255, 0.28), transparent 48%),
+    linear-gradient(135deg, #242424, #111);
 }
 .project-preview-shade {
   position: absolute;
