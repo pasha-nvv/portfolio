@@ -15,7 +15,7 @@ export function Stack() {
   return (
     <section className="stack-section section" id="stack">
       <div className="section-heading">
-        <SectionLabel>03 / Stack</SectionLabel>
+        <SectionLabel>04 / Stack</SectionLabel>
         <p>
           The tools I reach for
           <br />

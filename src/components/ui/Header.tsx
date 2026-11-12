@@ -1,4 +1,4 @@
-const navigation = ["about", "work", "stack", "contact"];
+const navigation = ["about", "top-work", "work", "stack", "contact"];
 export function Header() {
   return (
     <header className="site-header">
@@ -12,7 +12,7 @@ export function Header() {
       <nav aria-label="Main navigation">
         {navigation.map((item) => (
           <a href={`#${item}`} key={item}>
-            {item}
+            {item.replace("-", " ")}
           </a>
         ))}
       </nav>

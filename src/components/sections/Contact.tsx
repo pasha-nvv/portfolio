@@ -4,7 +4,7 @@ import { SocialLinks } from "../ui/SocialLinks";
 export function Contact() {
   return (
     <section className="contact-section section" id="contact">
-      <SectionLabel>04 / Contact</SectionLabel>
+      <SectionLabel>05 / Contact</SectionLabel>
       <p className="contact-pretitle">
         Have an idea, a project, or just want to say hello?
       </p>
